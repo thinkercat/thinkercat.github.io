@@ -34,10 +34,10 @@ body {
 }
 
 body.dark {
-    --body-color: #282F44;
+    --body-color: #404A80;
     --sidebar-color: #191D32;
     --primary-color: #6D3B47;
-    --primary-color-light: #453A49;
+    --primary-color-light: #202540;
     --text-color: #63173D;
 }
 
