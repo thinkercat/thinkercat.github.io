@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P',sans-serif;
+    font-weight: 400;
+}
+
+body{
+    --color-white:#E9EFEC;
+    --color-fade: #A0A08B;
+    --color-grey: #555568;
+    --color-black:#211E20;
+
+    min-height: 100vh;
+    background: var(--color-black);
+
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    padding: 10px 50px;
+    border-bottom: 3px solid var(--color-grey);
+    display: flex;
+
+}
+nav .banner{
+    left: 0;
+    min-width: fit-content;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+nav .banner a{
+    width: min-content;
+    height: min-content;
+    text-decoration: none;
+    color: var(--color-fade);
+}
+nav .banner a:hover{
+    color: var(--color-white);
+}
+nav .menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav .menu ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav .menu ul .search-bar{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav .menu ul .search-bar input{
+    width: 500px;
+    height: 75%;
+    margin-left: 30px;
+    padding-left: 6px;
+    padding-right: 3px;
+    outline: none;
+    border: 2px solid var(--color-grey);
+    border-radius: 7px;
+    color: var(--color-white);
+    background: var(--color-grey);
+}
+nav .menu ul .search-bar input::placeholder{
+    color: var(--color-black);
+}
+nav .menu ul .search-bar input:hover, 
+nav .menu ul .search-bar input:focus{
+    border-color: var(--color-fade);
+}
+
+nav .menu ul .nav-link{
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+nav .menu .nav-link li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--color-fade);
+}
+nav .menu .nav-link li a:hover{
+    color: var(--color-white);
+}
+nav .menu .nav-link li a.active{
+    color: var(--color-white);
+}
