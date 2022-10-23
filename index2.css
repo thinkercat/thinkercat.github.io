@@ -100,3 +100,57 @@ nav .menu .nav-link li a:hover{
 nav .menu .nav-link li a.active{
     color: var(--color-white);
 }
+/* ========================================== */
+
+.ascii-line{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ascii-line .line{
+    width: 100%;
+    height: min-content;
+}
+.ascii-line .line ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.ascii-line .line li span{
+    color: var(--color-grey);
+    font-size: small;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    cursor: default;
+    transition: 0.2s ease-out; 
+}
+.ascii-line .line li span:hover{
+    color: var(--color-fade);    
+}
+/* ======================================== */
+
+.hello-word{
+    width: fit-content;
+    height: auto;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.hello-word span{
+    font-size: 4em;
+    color: var(--color-fade);
+}
+
+
+
+.ascii-draw{
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto;
+}
+.ascii-draw span{
+    font-size: 1.5em;
+    color: var(--color-fade);
+}
