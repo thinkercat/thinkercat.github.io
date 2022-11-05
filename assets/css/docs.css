@@ -16,8 +16,13 @@ body{
 
     min-height: 100vh;
     background: var(--color-black);
-
+    
 }
+::-webkit-scrollbar{
+    width: 0;
+    visibility: hidden
+}
+
 
 nav{
     width: 100%;
@@ -130,27 +135,59 @@ nav .menu .nav-link li a.active{
 .ascii-line .line li span:hover{
     color: var(--color-fade);    
 }
-/* ======================================== */
-
-.hello-word{
-    width: fit-content;
+/* ///-------------------------------/// */
+.filter{
+    width: 100%;
     height: auto;
-    margin-left: 70px;
-    margin-top: 50px;
+    padding: 20px;
 }
-.hello-word span{
-    font-size: 4em;
+.filter .text p{
+    font-size: large;
     color: var(--color-fade);
 }
+.filter .filters ul{
+    display: flex;
+    list-style: none;
+    margin: 10px;
+}
+.filter .filters ul li a{
+    margin-left: 15px;
+    color: var(--color-fade);
+    font-size: small;
 
-
-
-.ascii-draw{
-    width: fit-content;
+}
+.filter .filters ul li a:hover{
+    color: var(--color-grey);
+}
+.docs-list{
+    width: 100%;
     height: fit-content;
-    margin: 20px auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+
 }
-.ascii-draw span{
-    font-size: 1.5em;
+.doc-container{
+    width: auto;
+    height: auto;   
+    margin-top: 20px;
+    padding: 20px 15px;
+    border: 2px solid var(--color-grey);
+    border-radius: 25px;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #555568;
+    transition: 300ms ease-in;
+}
+.doc-container:hover{
+    border-color: var(--color-fade);
     color: var(--color-fade);
+}
+.doc-container .doc-title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: medium;
+}
+.doc-container .doc-description{
+    font-size: small;
 }
