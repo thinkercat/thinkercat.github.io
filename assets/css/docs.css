@@ -60,32 +60,6 @@ nav .menu ul{
     display: flex;
     align-items: center;
 }
-nav .menu ul .search-bar{
-    width: auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-nav .menu ul .search-bar input{
-    width: 500px;
-    height: 75%;
-    margin-left: 30px;
-    padding-left: 6px;
-    padding-right: 3px;
-    outline: none;
-    border: 2px solid var(--color-grey);
-    border-radius: 7px;
-    color: var(--color-white);
-    background: var(--color-grey);
-}
-nav .menu ul .search-bar input::placeholder{
-    color: var(--color-black);
-}
-nav .menu ul .search-bar input:hover, 
-nav .menu ul .search-bar input:focus{
-    border-color: var(--color-fade);
-}
-
 nav .menu ul .nav-link{
     width: 100%;
     margin-right: 20px;
@@ -140,15 +114,41 @@ nav .menu .nav-link li a.active{
     width: 100%;
     height: auto;
     padding: 20px;
+    text-align: center;
 }
-.filter .text p{
+.filter .searchbar p{
     font-size: large;
     color: var(--color-fade);
+    margin: 10px;
 }
+.filter .searchbar input{
+    width: 700px;
+    height: 30px;
+    margin: 10px 25px;
+    padding-left: 6px;
+    padding-right: 3px;
+    outline: none;
+    border: 2px solid var(--color-grey);
+    border-radius: 7px;
+    color: var(--color-white);
+    background: var(--color-grey);
+}
+.filter .searchbar input::placeholder{
+    color: var(--color-black);
+}
+.filter .searchbar input:hover, 
+.filter .searchbar input:focus{
+    border-color: var(--color-fade);
+}
+.filter .searchbar span{
+    font-size: large;
+}
+
 .filter .filters ul{
     display: flex;
     list-style: none;
     margin: 10px;
+    justify-content: center;
 }
 .filter .filters ul li a{
     margin-left: 15px;

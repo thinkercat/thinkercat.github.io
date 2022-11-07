@@ -55,31 +55,6 @@ nav .menu ul{
     display: flex;
     align-items: center;
 }
-nav .menu ul .search-bar{
-    width: auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-nav .menu ul .search-bar input{
-    width: 500px;
-    height: 75%;
-    margin-left: 30px;
-    padding-left: 6px;
-    padding-right: 3px;
-    outline: none;
-    border: 2px solid var(--color-grey);
-    border-radius: 7px;
-    color: var(--color-white);
-    background: var(--color-grey);
-}
-nav .menu ul .search-bar input::placeholder{
-    color: var(--color-black);
-}
-nav .menu ul .search-bar input:hover, 
-nav .menu ul .search-bar input:focus{
-    border-color: var(--color-fade);
-}
 
 nav .menu ul .nav-link{
     width: 100%;

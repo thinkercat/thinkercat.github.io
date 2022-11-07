@@ -1,8 +1,7 @@
 
-
-let newA = document.createElement('a'),
+newA = document.createElement('a'),
     newTitle = document.createElement('p'),
-    newDescription = document.createElement('p'),
+    newDescription = document.createElement('p')
     newDiv = document.createElement('div')
 
 class CreateDocument {
